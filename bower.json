@@ -1,0 +1,17 @@
+{
+  "name": "my-shop",
+  "description": "'A replica  of the demo Shop'",
+  "main": "index.js",
+  "authors": [
+    "romuloban"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
