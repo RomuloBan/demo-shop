@@ -1,5 +1,8 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 
+<link rel="import" href="../bower_components/app-route/app-location.html">
+<link rel="import" href="../bower_components/app-route/app-route.html">
+
 <dom-module id="shop-app">
 
 	<template>
@@ -22,6 +25,16 @@
 		}
 			
 		</style>
+
+		<!--
+	      app-location and app-route elements provide the state of the URL for the app.
+	    -->
+
+		 <app-location route="{{route}}"></app-location>
+		 <<app-route route="{{route}}"
+		 			 pattern="/:page"
+		 			 data="{{routeData}}"
+		 			 tail="{{subroute}}"></app-route>
 		
 	</template>
 	<script>
